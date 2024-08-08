@@ -40,3 +40,28 @@
   border-radius: 5px;
   margin: 5px;
 }
+
+.btn-category {
+  background-color: white;
+  color: dark;
+  border: rgb(143, 73, 22) 2px solid;
+  border-radius: 2.5px;
+  margin: 5px;
+}
+
+.btn-category:hover {
+  background-color: rgb(143, 73, 22);
+  color: white;
+  border: dark 2px solid;
+  border-radius: 5px;
+}
+
+.img-item {
+  height: 150px;
+  width: 222px;
+  border-radius: 5px;
+}
+.item-price {
+  color: rgb(143, 73, 22);
+  margin: 10px;
+}
