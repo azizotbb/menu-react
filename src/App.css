@@ -1,0 +1,42 @@
+.almarai-light {
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.almarai-regular {
+  font-family: "Almarai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almarai-bold {
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btn-search {
+  background-color: white;
+  color: rgb(143, 73, 22);
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.btn-search:hover {
+  background-color: rgb(143, 73, 22);
+  color: white;
+}
+
+.header {
+  margin: 5px;
+  color: dark;
+  text-align: center;
+}
+.header-line {
+  width: 200px;
+  height: 1;
+  border: 2px rgb(143, 73, 22) solid;
+  border-radius: 5px;
+  margin: 5px;
+}
