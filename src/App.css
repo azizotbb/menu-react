@@ -44,7 +44,7 @@
 .btn-category {
   background-color: white;
   color: dark;
-  border: rgb(143, 73, 22) 2px solid;
+  border: rgb(143, 73, 22) 1px solid;
   border-radius: 2.5px;
   margin: 5px;
 }
@@ -52,7 +52,7 @@
 .btn-category:hover {
   background-color: rgb(143, 73, 22);
   color: white;
-  border: dark 2px solid;
+  border: dark 1px solid;
   border-radius: 5px;
 }
 

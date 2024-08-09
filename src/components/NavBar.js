@@ -1,14 +1,12 @@
-import React from "react";
-import {
-  Button,
-  Container,
-  Form,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import React, { useState } from "react";
+import { Container, Form, Nav, Navbar } from "react-bootstrap";
 
-export default function NavBar() {
+export default function NavBar({ filterSearch }) {
+  const [search, setSearch] = useState("");
+  const onSearch = () => {
+    filterSearch(search);
+  };
+
   return (
     <Navbar expand="lg" className="bg-dark ">
       <Container>
@@ -29,12 +27,21 @@ export default function NavBar() {
           ></Nav>
           <Form className="d-flex">
             <Form.Control
-              type="search"
+              type="text"
               placeholder="البحث ..."
               className="me-2"
-              aria-label="Search"
+              onChange={(e) => {
+                setSearch(e.target.value);
+              }}
+              value={search}
             />
-            <button className="btn-search almarai-regular">البحث</button>
+            <button
+              className="btn-search almarai-regular"
+              onClick={onSearch()}
+              type="button"
+            >
+              البحث
+            </button>
           </Form>
         </Navbar.Collapse>
       </Container>
